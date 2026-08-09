@@ -477,6 +477,12 @@ svg { width: 22px; height: 22px; }
   aspect-ratio: 4/3;
   object-fit: cover;
 }
+.service-detail-media img.img-collage {
+  aspect-ratio: 1179/2096;
+  max-width: 420px;
+  margin: 0 auto;
+  display: block;
+}
 .service-detail-copy .service-icon { margin-bottom: 22px; }
 .service-detail-list { list-style: none; margin: 22px 0 0; padding: 0; display: flex; flex-direction: column; gap: 12px; }
 .service-detail-list li { display: flex; gap: 10px; align-items: flex-start; color: var(--ink); font-size: 0.95rem; }
