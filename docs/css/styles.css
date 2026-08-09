@@ -479,7 +479,7 @@ svg { width: 22px; height: 22px; }
 }
 .service-detail-media img.img-collage {
   aspect-ratio: 1179/2096;
-  max-width: 420px;
+  max-width: 300px;
   margin: 0 auto;
   display: block;
 }
