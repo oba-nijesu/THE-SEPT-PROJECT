@@ -190,6 +190,7 @@ svg { width: 22px; height: 22px; }
 .brand {
   display: inline-flex;
   align-items: center;
+  margin-left: -20px;
 }
 .brand img { height: 76px; width: auto; }
 
