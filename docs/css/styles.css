@@ -481,6 +481,36 @@ svg { width: 22px; height: 22px; }
   display: block;
 }
 
+.img-link {
+  position: relative;
+  display: block;
+  max-width: 300px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.img-link-badge {
+  position: absolute;
+  left: 50%;
+  bottom: 16px;
+  transform: translateX(-50%);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(10,10,11,0.65);
+  color: var(--white);
+  font-family: var(--font-head);
+  font-weight: 600;
+  font-size: 0.82rem;
+  padding: 8px 14px;
+  border-radius: 999px;
+  backdrop-filter: blur(4px);
+  pointer-events: none;
+  transition: background-color 200ms ease;
+  white-space: nowrap;
+}
+.img-link-badge svg { width: 14px; height: 14px; flex: none; }
+.img-link:hover .img-link-badge { background: var(--orange); }
+
 /* Photo slider used inside a service-detail-media slot */
 .img-slider {
   position: relative;
