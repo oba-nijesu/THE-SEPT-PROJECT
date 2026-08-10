@@ -97,6 +97,35 @@
     });
   }
 
+  /* ---------- Photo sliders ---------- */
+  document.querySelectorAll('[data-slider]').forEach(function (slider) {
+    var track = slider.querySelector('.img-slider-track');
+    var slides = slider.querySelectorAll('.img-slider-track img');
+    var prevBtn = slider.querySelector('.slider-prev');
+    var nextBtn = slider.querySelector('.slider-next');
+    var currentEl = slider.querySelector('[data-slider-current]');
+    var total = slides.length;
+    var index = 0;
+
+    function render() {
+      track.style.transform = 'translateX(-' + (index * 100) + '%)';
+      if (currentEl) currentEl.textContent = String(index + 1);
+    }
+
+    if (prevBtn) {
+      prevBtn.addEventListener('click', function () {
+        index = (index - 1 + total) % total;
+        render();
+      });
+    }
+    if (nextBtn) {
+      nextBtn.addEventListener('click', function () {
+        index = (index + 1) % total;
+        render();
+      });
+    }
+  });
+
   /* ---------- FAQ accordion ---------- */
   var faqItems = document.querySelectorAll('.faq-item');
   faqItems.forEach(function (item) {
