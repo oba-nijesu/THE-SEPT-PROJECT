@@ -104,8 +104,11 @@
     var prevBtn = slider.querySelector('.slider-prev');
     var nextBtn = slider.querySelector('.slider-next');
     var currentEl = slider.querySelector('[data-slider-current]');
+    var totalEl = slider.querySelector('[data-slider-total]');
     var total = slides.length;
     var index = 0;
+
+    if (totalEl) totalEl.textContent = String(total);
 
     function render() {
       track.style.transform = 'translateX(-' + (index * 100) + '%)';
