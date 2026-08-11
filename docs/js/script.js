@@ -90,7 +90,16 @@
         btn.classList.add('active');
         var filter = btn.getAttribute('data-filter');
         workCards.forEach(function (card) {
-          var match = filter === 'all' || card.getAttribute('data-category') === filter;
+          var category = card.getAttribute('data-category');
+          var display = card.getAttribute('data-display') || 'slider';
+          var match;
+          if (filter === 'all') {
+            match = display === 'slider';
+          } else if (category === 'events') {
+            match = filter === 'events';
+          } else {
+            match = category === filter && display === 'single';
+          }
           card.classList.toggle('is-hidden', !match);
         });
       });
