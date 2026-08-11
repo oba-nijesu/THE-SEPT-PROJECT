@@ -676,6 +676,16 @@ svg { width: 22px; height: 22px; }
 }
 .work-card.is-event .work-tag { background: var(--orange); }
 
+/* Slider embedded inside a Work-page card, sized to match the standard photo box */
+.work-card .img-slider {
+  aspect-ratio: auto;
+  max-width: none;
+  height: 340px;
+  margin: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
 /* ---------- Events / Video ---------- */
 .events { padding: 110px 0; background: var(--black); color: var(--white); }
 .events h2, .events .eyebrow ~ h2 { color: var(--white); }

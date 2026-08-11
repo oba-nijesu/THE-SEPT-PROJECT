@@ -58,83 +58,75 @@
       <div class="work-filters reveal">
         <button class="filter-btn active" data-filter="all">All Work</button>
         <button class="filter-btn" data-filter="office">Office Design</button>
+        <button class="filter-btn" data-filter="tower">Telecom Towers</button>
         <button class="filter-btn" data-filter="events">Events</button>
       </div>
 
       <div class="work-grid" id="workGrid">
-        <figure class="work-card reveal" data-category="office">
+        <figure class="work-card work-card-slider reveal" data-category="office">
           <span class="work-tag">Office Design</span>
-          <img src="assets/img/office-01.jpg" alt="Executive reception lounge with sofa seating and media wall" loading="lazy">
+          <div class="img-slider" data-slider>
+            <div class="img-slider-track">
+              <img src="assets/img/office-01.jpg" alt="Executive reception lounge with sofa seating and media wall" data-caption="Executive Reception Lounge" loading="lazy">
+              <img src="assets/img/office-02.jpg" alt="Boardroom with conference table, video conferencing screen and seating for eight" data-caption="Boardroom &amp; Conference Suite" loading="lazy">
+              <img src="assets/img/office-04.jpg" alt="Executive office desk with seating for meetings and display shelving" data-caption="Executive Office Design" loading="lazy">
+              <img src="assets/img/office-03.jpg" alt="Office shelving displaying awards and press features" data-caption="Executive Display &amp; Storage" loading="lazy">
+              <img src="assets/img/office-05.jpg" alt="Conference room with oval pendant light and black and white chairs" data-caption="Conference Room" loading="lazy">
+              <img src="assets/img/office-06.jpg" alt="Open-plan workspace with staff desks and mezzanine railing" data-caption="Open-Plan Workspace" loading="lazy">
+              <img src="assets/img/office-07.jpg" alt="Boardroom with wood-panelled media wall and mounted screen" data-caption="Boardroom Media Wall" loading="lazy">
+              <img src="assets/img/office-08.jpg" alt="Executive lounge nook with orange chairs and round table" data-caption="Executive Lounge Nook" loading="lazy">
+            </div>
+            <button type="button" class="slider-arrow slider-prev" aria-label="Previous photo">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <button type="button" class="slider-arrow slider-next" aria-label="Next photo">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="slider-counter"><span data-slider-current>1</span> / <span data-slider-total>8</span></div>
+          </div>
           <figcaption>
-            <h3>Executive Reception Lounge</h3>
+            <h3 data-slider-caption>Executive Reception Lounge</h3>
             <p>Corporate Office Fit-Out</p>
           </figcaption>
         </figure>
 
-        <figure class="work-card reveal delay-1" data-category="office">
-          <span class="work-tag">Office Design</span>
-          <img src="assets/img/office-02.jpg" alt="Boardroom with conference table, video conferencing screen and seating for eight" loading="lazy">
+        <figure class="work-card work-card-slider reveal delay-1" data-category="tower">
+          <span class="work-tag">Infrastructure</span>
+          <div class="img-slider" data-slider>
+            <div class="img-slider-track">
+              <img src="assets/img/tower-01.jpg" alt="Site team excavating trench foundations" data-caption="Site Excavation" loading="lazy">
+              <img src="assets/img/tower-02.jpg" alt="Concrete foundation piers set during construction" data-caption="Foundation Piers" loading="lazy">
+              <img src="assets/img/tower-03.jpg" alt="Concrete footing formwork during pour" data-caption="Footing Pour" loading="lazy">
+              <img src="assets/img/tower-04.jpg" alt="Concrete mixer in use on site" data-caption="On-Site Concrete Mixing" loading="lazy">
+              <img src="assets/img/tower-05.jpg" alt="Rebar cage inside column formwork" data-caption="Reinforcement Cage" loading="lazy">
+              <img src="assets/img/tower-06.jpg" alt="Rebar column closeup with formwork bolts" data-caption="Column Reinforcement" loading="lazy">
+              <img src="assets/img/tower-07.jpg" alt="Rebar mesh formwork wall" data-caption="Mesh Formwork" loading="lazy">
+              <img src="assets/img/tower-08.jpg" alt="Rebar cage with survey compass overlay" data-caption="Structural Survey Detail" loading="lazy">
+              <img src="assets/img/tower-09.jpg" alt="Steel lattice tower frame being erected with workers on site" data-caption="Tower Steel Erection" loading="lazy">
+              <img src="assets/img/tower-10.jpg" alt="Workers erecting the steel tower structure" data-caption="Tower Assembly" loading="lazy">
+              <img src="assets/img/tower-11.jpg" alt="Tower base foundation bolts closeup" data-caption="Base Foundation Detail" loading="lazy">
+              <img src="assets/img/tower-12.jpg" alt="Standby generator and water tank installed on site" data-caption="Standby Generator" loading="lazy">
+              <img src="assets/img/tower-13.jpg" alt="Solar panel array mounted for backup power" data-caption="Solar Power Installation" loading="lazy">
+              <img src="assets/img/tower-14.jpg" alt="Solar panels with perimeter security fencing" data-caption="Solar Array &amp; Fencing" loading="lazy">
+              <img src="assets/img/tower-15.jpg" alt="Outdoor electrical and equipment cabinets installed" data-caption="Equipment Cabinets" loading="lazy">
+              <img src="assets/img/tower-16.jpg" alt="Security fencing with anti-climb wire around the tower" data-caption="Perimeter Security" loading="lazy">
+              <img src="assets/img/tower-17.jpg" alt="Completed telecommunications tower with mounted antennas" data-caption="Completed Tower" loading="lazy">
+            </div>
+            <button type="button" class="slider-arrow slider-prev" aria-label="Previous photo">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <button type="button" class="slider-arrow slider-next" aria-label="Next photo">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="slider-counter"><span data-slider-current>1</span> / <span data-slider-total>17</span></div>
+          </div>
           <figcaption>
-            <h3>Boardroom &amp; Conference Suite</h3>
-            <p>Corporate Office Fit-Out</p>
+            <h3 data-slider-caption>Site Excavation</h3>
+            <p>Telecommunications Tower Build</p>
           </figcaption>
         </figure>
 
-        <figure class="work-card reveal delay-2" data-category="office">
-          <span class="work-tag">Office Design</span>
-          <img src="assets/img/office-04.jpg" alt="Executive office desk with seating for meetings and display shelving" loading="lazy">
-          <figcaption>
-            <h3>Executive Office Design</h3>
-            <p>Corporate Office Fit-Out</p>
-          </figcaption>
-        </figure>
-
-        <figure class="work-card reveal" data-category="office">
-          <span class="work-tag">Office Design</span>
-          <img src="assets/img/office-03.jpg" alt="Office shelving displaying awards and press features" loading="lazy">
-          <figcaption>
-            <h3>Executive Display &amp; Storage</h3>
-            <p>Corporate Office Fit-Out</p>
-          </figcaption>
-        </figure>
-
-        <figure class="work-card reveal delay-1" data-category="office">
-          <span class="work-tag">Office Design</span>
-          <img src="assets/img/office-05.jpg" alt="Conference room with oval pendant light and black and white chairs" loading="lazy">
-          <figcaption>
-            <h3>Conference Room</h3>
-            <p>Corporate Office Fit-Out</p>
-          </figcaption>
-        </figure>
-
-        <figure class="work-card reveal delay-2" data-category="office">
-          <span class="work-tag">Office Design</span>
-          <img src="assets/img/office-06.jpg" alt="Open-plan workspace with staff desks and mezzanine railing" loading="lazy">
-          <figcaption>
-            <h3>Open-Plan Workspace</h3>
-            <p>Corporate Office Fit-Out</p>
-          </figcaption>
-        </figure>
-
-        <figure class="work-card reveal" data-category="office">
-          <span class="work-tag">Office Design</span>
-          <img src="assets/img/office-07.jpg" alt="Boardroom with wood-panelled media wall and mounted screen" loading="lazy">
-          <figcaption>
-            <h3>Boardroom Media Wall</h3>
-            <p>Corporate Office Fit-Out</p>
-          </figcaption>
-        </figure>
-
-        <figure class="work-card reveal delay-1" data-category="office">
-          <span class="work-tag">Office Design</span>
-          <img src="assets/img/office-08.jpg" alt="Executive lounge nook with orange chairs and round table" loading="lazy">
-          <figcaption>
-            <h3>Executive Lounge Nook</h3>
-            <p>Corporate Office Fit-Out</p>
-          </figcaption>
-        </figure>
-
-        <figure class="work-card is-event reveal delay-1" data-category="events">
+        <figure class="work-card is-event reveal delay-2" data-category="events">
           <span class="work-tag">Event</span>
           <a href="events.html" aria-label="Watch the Kunbi Kares outreach event highlight">
             <img src="assets/img/kunbi-kares-poster.jpg" alt="Team hosting an outreach event for Kunbi Kares at a hospital" loading="lazy">

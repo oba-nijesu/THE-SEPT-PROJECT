@@ -105,6 +105,8 @@
     var nextBtn = slider.querySelector('.slider-next');
     var currentEl = slider.querySelector('[data-slider-current]');
     var totalEl = slider.querySelector('[data-slider-total]');
+    var card = slider.closest('.work-card');
+    var captionEl = card && card.querySelector('[data-slider-caption]');
     var total = slides.length;
     var index = 0;
 
@@ -113,6 +115,7 @@
     function render() {
       track.style.transform = 'translateX(-' + (index * 100) + '%)';
       if (currentEl) currentEl.textContent = String(index + 1);
+      if (captionEl) captionEl.textContent = slides[index].getAttribute('data-caption') || '';
     }
 
     if (prevBtn) {
