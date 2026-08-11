@@ -404,6 +404,7 @@ svg { width: 22px; height: 22px; }
   aspect-ratio: 4/3;
   object-fit: cover;
 }
+.about-image .about-gallery img { aspect-ratio: 3/4; }
 
 .values-grid {
   display: grid;
