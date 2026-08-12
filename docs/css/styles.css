@@ -989,7 +989,7 @@ svg { width: 22px; height: 22px; }
   .about-gallery { grid-template-columns: 1fr; }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 920px) {
   .main-nav {
     position: fixed;
     top: var(--header-h);
