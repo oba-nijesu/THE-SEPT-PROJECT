@@ -261,9 +261,13 @@ svg { width: 22px; height: 22px; }
 }
 .hero-content .eyebrow {
   display: inline-block;
-  background: rgba(255,255,255,0.92);
+  background: rgba(255,255,255,0.4);
+  backdrop-filter: blur(6px);
   padding: 7px 16px;
   border-radius: 6px;
+}
+@media (min-width: 720px) {
+  .hero-content .eyebrow { white-space: nowrap; }
 }
 .hero-content h1 { color: var(--white); }
 .hero-lead { color: rgba(255,255,255,0.85); font-size: 1.08rem; max-width: 58ch; }
