@@ -1,6 +1,6 @@
 /* ===========================================================
    The September Project Managers Ltd — Stylesheet
-   Brand: White / Black / Blue / Dark Orange
+   Brand: White / Black / Deep Blue
    =========================================================== */
 
 :root {
@@ -10,9 +10,6 @@
   --blue: #1D4ED8;
   --blue-dark: #112E87;
   --blue-light: #6C8EF5;
-  --orange: #C2410C;
-  --orange-dark: #932F09;
-  --orange-light: #EA6A1F;
   --white: #FFFFFF;
   --gray-50: #F4F5F7;
   --gray-100: #E9EBEF;
@@ -91,7 +88,7 @@ svg { width: 22px; height: 22px; }
   text-transform: uppercase;
   letter-spacing: 0.14em;
   font-size: 0.78rem;
-  color: var(--orange);
+  color: var(--blue-dark);
   margin-bottom: 0.9em;
 }
 
@@ -129,11 +126,11 @@ svg { width: 22px; height: 22px; }
 .btn:focus-visible { outline: 3px solid var(--blue-light); outline-offset: 2px; }
 
 .btn-primary {
-  background: var(--orange);
+  background: var(--blue-dark);
   color: var(--white);
   box-shadow: var(--shadow-sm);
 }
-.btn-primary:hover { background: var(--orange-dark); transform: translateY(-2px); box-shadow: var(--shadow-md); }
+.btn-primary:hover { background: var(--black); transform: translateY(-2px); box-shadow: var(--shadow-md); }
 
 .btn-secondary {
   background: var(--blue);
@@ -209,12 +206,12 @@ svg { width: 22px; height: 22px; }
   position: absolute;
   left: 0; bottom: 0;
   width: 0; height: 2px;
-  background: var(--orange);
+  background: var(--blue-dark);
   transition: width 200ms ease;
 }
 .main-nav a:hover::after,
 .main-nav a.active::after { width: 100%; }
-.main-nav a.active { color: var(--orange) !important; }
+.main-nav a.active { color: var(--blue-dark) !important; }
 
 .header-actions { display: flex; align-items: center; gap: 18px; }
 
@@ -294,7 +291,7 @@ svg { width: 22px; height: 22px; }
   text-transform: uppercase;
   letter-spacing: 0.06em;
 }
-.breadcrumb a:hover { color: var(--orange-light); }
+.breadcrumb a:hover { color: var(--blue-light); }
 
 /* ---------- Trust bar / marquee ---------- */
 .trust-bar { padding: 48px 0; border-bottom: 1px solid var(--border); background: var(--white); }
@@ -346,7 +343,7 @@ svg { width: 22px; height: 22px; }
 .marquee-track .logo-chip:hover {
   transform: translateY(-5px) scale(1.04);
   box-shadow: var(--shadow-md);
-  border-color: var(--orange);
+  border-color: var(--blue-dark);
 }
 .logo-row img,
 .marquee-track img {
@@ -384,7 +381,7 @@ svg { width: 22px; height: 22px; }
   width: 46px; height: 46px;
   border-radius: 12px;
   background: var(--gray-50);
-  color: var(--orange);
+  color: var(--blue-dark);
   display: flex; align-items: center; justify-content: center;
 }
 .stat h3 { margin-bottom: 4px; }
@@ -419,7 +416,7 @@ svg { width: 22px; height: 22px; }
   transition: transform 220ms ease, box-shadow 220ms ease;
 }
 .value-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-md); }
-.value-card .stat-icon { color: var(--orange); margin-bottom: 16px; }
+.value-card .stat-icon { color: var(--blue-dark); margin-bottom: 16px; }
 
 /* ---------- Services ---------- */
 .services { padding: 110px 0; background: var(--gray-50); }
@@ -440,7 +437,7 @@ svg { width: 22px; height: 22px; }
   width: 52px; height: 52px;
   border-radius: 14px;
   background: var(--black);
-  color: var(--orange-light);
+  color: var(--blue-light);
   display: flex; align-items: center; justify-content: center;
   margin-bottom: 20px;
 }
@@ -453,7 +450,7 @@ svg { width: 22px; height: 22px; }
   flex-direction: column;
   justify-content: center;
 }
-.service-card-cta:hover { border-color: var(--orange); }
+.service-card-cta:hover { border-color: var(--blue-dark); }
 .service-card-cta h3 { color: var(--white); }
 .service-card-cta p { color: rgba(255,255,255,0.72); margin-bottom: 20px; }
 
@@ -510,7 +507,7 @@ svg { width: 22px; height: 22px; }
   white-space: nowrap;
 }
 .img-link-badge svg { width: 14px; height: 14px; flex: none; }
-.img-link:hover .img-link-badge { background: var(--orange); }
+.img-link:hover .img-link-badge { background: var(--blue-dark); }
 
 /* Photo slider used inside a service-detail-media slot */
 .img-slider {
@@ -556,7 +553,7 @@ svg { width: 22px; height: 22px; }
   transition: background-color 200ms ease;
   backdrop-filter: blur(4px);
 }
-.slider-arrow:hover { background: var(--orange); }
+.slider-arrow:hover { background: var(--blue-dark); }
 .slider-arrow svg { width: 20px; height: 20px; }
 .slider-prev { left: 12px; }
 .slider-next { right: 12px; }
@@ -583,7 +580,7 @@ svg { width: 22px; height: 22px; }
 .service-title-row h2 { margin-bottom: 0; }
 .service-detail-list { list-style: none; margin: 22px 0 0; padding: 0; display: flex; flex-direction: column; gap: 12px; }
 .service-detail-list li { display: flex; gap: 10px; align-items: flex-start; color: var(--ink); font-size: 0.95rem; }
-.service-detail-list svg { flex: none; width: 18px; height: 18px; margin-top: 3px; color: var(--orange); }
+.service-detail-list svg { flex: none; width: 18px; height: 18px; margin-top: 3px; color: var(--blue-dark); }
 
 /* Process steps */
 .process { padding: 100px 0; background: var(--black); color: var(--white); }
@@ -599,7 +596,7 @@ svg { width: 22px; height: 22px; }
   font-family: var(--font-head);
   font-weight: 700;
   font-size: 2.2rem;
-  color: var(--orange-light);
+  color: var(--blue-light);
   margin-bottom: 10px;
   display: block;
 }
@@ -675,7 +672,7 @@ svg { width: 22px; height: 22px; }
   border-radius: 999px;
   backdrop-filter: blur(4px);
 }
-.work-card.is-event .work-tag { background: var(--orange); }
+.work-card.is-event .work-tag { background: var(--blue-dark); }
 
 /* Slider embedded inside a Work-page card, sized to match the standard photo box */
 .work-card .img-slider {
@@ -700,7 +697,7 @@ svg { width: 22px; height: 22px; }
 .events-copy p { color: rgba(255,255,255,0.72); }
 
 .events-copy .stat-row { margin-top: 30px; }
-.events-copy .stat-icon { background: rgba(255,255,255,0.08); color: var(--orange-light); }
+.events-copy .stat-icon { background: rgba(255,255,255,0.08); color: var(--blue-light); }
 .events-copy .stat p { color: rgba(255,255,255,0.65); }
 .events-copy .stat h3 { color: var(--white); }
 
@@ -746,7 +743,7 @@ svg { width: 22px; height: 22px; }
   width: 76px; height: 76px;
   border-radius: 50%;
   border: none;
-  background: var(--orange);
+  background: var(--blue-dark);
   color: var(--white);
   display: flex; align-items: center; justify-content: center;
   cursor: pointer;
@@ -754,7 +751,7 @@ svg { width: 22px; height: 22px; }
   box-shadow: 0 0 0 0 rgba(194,65,12,0.5);
   animation: pulse 2.4s infinite;
 }
-.play-btn:hover { transform: scale(1.08); background: var(--orange-dark); }
+.play-btn:hover { transform: scale(1.08); background: var(--black); }
 .play-btn svg { width: 30px; height: 30px; }
 @keyframes pulse {
   0% { box-shadow: 0 0 0 0 rgba(194,65,12,0.45); }
@@ -784,7 +781,7 @@ svg { width: 22px; height: 22px; }
   border-radius: 10px;
   font-size: 0.88rem;
 }
-.events-note svg { flex: none; color: var(--orange-light); }
+.events-note svg { flex: none; color: var(--blue-light); }
 .events-note p { color: rgba(255,255,255,0.7); margin: 0; }
 
 /* ---------- CTA banner ---------- */
@@ -807,7 +804,7 @@ svg { width: 22px; height: 22px; }
 .contact-info p { max-width: 46ch; }
 .contact-details { list-style: none; margin: 30px 0; padding: 0; display: flex; flex-direction: column; gap: 16px; }
 .contact-details li { display: flex; align-items: center; gap: 14px; color: var(--ink); }
-.contact-details svg { color: var(--orange); flex: none; }
+.contact-details svg { color: var(--blue-dark); flex: none; }
 .contact-details a { font-weight: 500; }
 
 .whatsapp-inline {
@@ -887,7 +884,7 @@ svg { width: 22px; height: 22px; }
   font-size: 1rem;
   color: var(--ink);
 }
-.faq-question svg { flex: none; transition: transform 220ms ease; color: var(--orange); }
+.faq-question svg { flex: none; transition: transform 220ms ease; color: var(--blue-dark); }
 .faq-item.open .faq-question svg { transform: rotate(45deg); }
 .faq-answer {
   max-height: 0;
@@ -923,7 +920,7 @@ svg { width: 22px; height: 22px; }
   transition: background-color 200ms ease, border-color 200ms ease;
 }
 .footer-social svg { width: 16px; height: 16px; }
-.footer-social a:hover { background: var(--orange); border-color: var(--orange); }
+.footer-social a:hover { background: var(--blue-dark); border-color: var(--blue-dark); }
 
 .footer-links, .footer-contact { display: flex; flex-direction: column; gap: 12px; }
 .footer-links h4, .footer-contact h4 {
@@ -938,7 +935,7 @@ svg { width: 22px; height: 22px; }
   font-size: 0.92rem;
   color: rgba(255,255,255,0.68);
 }
-.footer-links a:hover, .footer-contact a:hover { color: var(--orange-light); }
+.footer-links a:hover, .footer-contact a:hover { color: var(--blue-light); }
 
 .footer-bottom { padding: 24px 0; }
 .footer-bottom p { margin: 0; font-size: 0.85rem; color: rgba(255,255,255,0.5); text-align: center; }
