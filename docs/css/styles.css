@@ -271,13 +271,16 @@ svg { width: 22px; height: 22px; }
   border-radius: 6px;
   max-width: none;
   font-size: 1rem;
+  margin-bottom: 0.3em;
 }
 @media (min-width: 720px) {
   .hero-content .eyebrow { white-space: nowrap; width: max-content; }
 }
-.hero-content h1 { color: var(--white); }
+.hero-content h1 { color: var(--white); font-size: clamp(1.7rem, 3.6vw, 2.6rem); margin-top: 0.3em; }
 .hero-lead { color: rgba(255,255,255,0.85); font-size: 1.08rem; max-width: 58ch; }
+.hero-content .hero-lead { font-size: 0.95rem; }
 .hero-cta { display: flex; gap: 16px; flex-wrap: wrap; margin-top: 28px; }
+.hero-content .btn { padding: 12px 22px; font-size: 0.86rem; min-height: 42px; }
 
 /* ---------- Page header (subpages) ---------- */
 .page-header {
