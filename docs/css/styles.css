@@ -278,9 +278,9 @@ svg { width: 22px; height: 22px; }
 }
 .hero-content h1 { color: var(--white); font-size: clamp(1.7rem, 3.6vw, 2.6rem); margin-top: 0.3em; }
 .hero-lead { color: rgba(255,255,255,0.85); font-size: 1.08rem; max-width: 58ch; }
-.hero-content .hero-lead { font-size: 0.92rem; }
+.hero-content .hero-lead { font-size: 1.15rem; }
 .hero-cta { display: flex; gap: 16px; flex-wrap: wrap; margin-top: 28px; }
-.hero-content .btn { padding: 24px 44px; font-size: 1.72rem; min-height: 84px; }
+.hero-content .btn { padding: 14px 26px; font-size: 0.92rem; min-height: 46px; }
 
 /* ---------- Page header (subpages) ---------- */
 .page-header {
