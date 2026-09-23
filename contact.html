@@ -8,7 +8,7 @@
 <link rel="icon" href="assets/img/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Text:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -62,7 +62,7 @@
         <ul class="contact-details">
           <li>
             <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 5h18v14H3V5zm0 0l9 7 9-7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <a href="mailto:Timismith17@gmail.com">Timismith17@gmail.com</a>
+            <a href="mailto:info@septemberproject.com">info@septemberproject.com</a>
           </li>
           <li>
             <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -118,8 +118,10 @@
         </div>
       </div>
 
-      <form class="contact-form reveal" id="contactForm" novalidate>
+      <form class="contact-form reveal" id="contactForm" action="contact.php" method="POST" novalidate>
         <div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
+
+        <input type="text" name="website" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
 
         <div class="form-row">
           <div class="form-field">
@@ -188,12 +190,13 @@
     </div>
     <div class="footer-links">
       <h4>Legal</h4>
-      <span>Terms of Service</span>
-      <span>Privacy Policy</span>
+      <a href="terms-of-service.html">Terms of Service</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="disclaimer.html">Website Disclaimer</a>
     </div>
     <div class="footer-contact">
       <h4>Contact</h4>
-      <a href="mailto:Timismith17@gmail.com">Timismith17@gmail.com</a>
+      <a href="mailto:info@septemberproject.com">info@septemberproject.com</a>
       <a href="tel:+2348138029015">+234 813 802 9015</a>
       <span>6 Ladele, Lagos, Nigeria</span>
     </div>

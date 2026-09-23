@@ -17,8 +17,8 @@
   --muted: #53565F;
   --border: #E2E4E9;
 
-  --font-head: 'Poppins', sans-serif;
-  --font-body: 'Inter', sans-serif;
+  --font-head: 'Outfit', sans-serif;
+  --font-body: 'Wix Madefor Text', sans-serif;
 
   --shadow-sm: 0 2px 10px rgba(10, 10, 11, 0.07);
   --shadow-md: 0 12px 32px rgba(10, 10, 11, 0.14);
@@ -883,6 +883,8 @@ svg { width: 22px; height: 22px; }
   font-size: 0.92rem;
 }
 .form-status.visible { display: block; }
+.form-status.error { background: #FDECEC; color: #A0272A; }
+.hp-field { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
 
 /* FAQ (contact page) */
 .faq-list { margin-top: 40px; border-top: 1px solid var(--border); }
@@ -976,6 +978,26 @@ svg { width: 22px; height: 22px; }
 .whatsapp-fab:hover { transform: scale(1.08); }
 .whatsapp-fab svg { width: 30px; height: 30px; }
 
+/* ---------- Legal pages (Privacy Policy / Terms of Service) ---------- */
+.legal-page { padding: 90px 0 110px; }
+.legal-content { max-width: 760px; margin: 0 auto; }
+.legal-updated {
+  font-family: var(--font-head);
+  font-weight: 500;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  margin-bottom: 36px;
+}
+.legal-content h2 { font-size: 1.35rem; margin-top: 44px; margin-bottom: 14px; }
+.legal-content h2:first-of-type { margin-top: 0; }
+.legal-content p, .legal-content li { max-width: none; }
+.legal-content ul { margin: 0 0 1em; padding-left: 22px; color: var(--muted); }
+.legal-content li { margin-bottom: 8px; }
+.legal-content a { color: var(--blue-dark); font-weight: 500; }
+.legal-content a:hover { text-decoration: underline; }
+
 /* ---------- Scroll reveal ---------- */
 .reveal { opacity: 0; transform: translateY(24px); transition: opacity 700ms ease, transform 700ms ease; }
 .reveal.in-view { opacity: 1; transform: translateY(0); }
@@ -984,7 +1006,7 @@ svg { width: 22px; height: 22px; }
 .reveal.delay-3.in-view { transition-delay: 270ms; }
 
 /* ---------- Responsive ---------- */
-@media (max-width: 980px) {
+@media (max-width: 700px) {
   .about-grid, .events-grid, .contact-grid { grid-template-columns: 1fr; }
   .about-image { order: -1; }
   .service-grid { grid-template-columns: repeat(2, 1fr); }
@@ -997,7 +1019,7 @@ svg { width: 22px; height: 22px; }
   .about-gallery { grid-template-columns: 1fr; }
 }
 
-@media (max-width: 920px) {
+@media (max-width: 700px) {
   .main-nav {
     position: fixed;
     top: var(--header-h);
@@ -1029,4 +1051,38 @@ svg { width: 22px; height: 22px; }
   .process-grid { grid-template-columns: 1fr; }
   .values-grid { grid-template-columns: 1fr; }
   .video-player { max-width: 300px; }
+
+  /* Shrink section spacing so mobile isn't just the desktop layout squeezed narrower */
+  .container { padding: 0 18px; }
+  .about, .services, .process, .work, .events, .contact { padding: 72px 0; }
+  .cta-banner { padding: 64px 0; }
+  .trust-bar { padding: 36px 0; }
+  .legal-page { padding: 56px 0 72px; }
+  .section-head { margin-bottom: 32px; }
+  .about-grid, .events-grid, .contact-grid { gap: 40px; }
+  .service-grid, .values-grid, .process-grid, .work-grid { gap: 18px; }
+}
+
+/* Extra-small phones: shrink further */
+@media (max-width: 480px) {
+  h1 { font-size: clamp(1.9rem, 8vw, 2.3rem); }
+  h2 { font-size: clamp(1.5rem, 7vw, 1.9rem); }
+  .hero-content h1 { font-size: clamp(1.5rem, 7.5vw, 1.9rem); }
+  .hero-lead, .hero-content .hero-lead { font-size: 0.96rem; }
+  .btn { padding: 12px 20px; font-size: 0.85rem; min-height: 44px; }
+  .hero-content .btn { padding: 12px 18px; font-size: 0.82rem; }
+  .hero-content { padding-top: 110px; padding-bottom: 40px; }
+  .page-header-content { padding-top: 118px; padding-bottom: 40px; }
+  .brand img { height: 44px; }
+
+  .about, .services, .process, .work, .events, .contact { padding: 56px 0; }
+  .cta-banner { padding: 48px 0; }
+  .value-card, .service-card { padding: 22px 18px; }
+  .contact-form { padding: 20px; }
+  .service-icon, .stat-icon { width: 40px; height: 40px; border-radius: 10px; }
+  .process-step .step-num { font-size: 1.8rem; }
+  .video-player { max-width: 240px; }
+  .footer-brand img { height: 34px; }
+  .whatsapp-fab { width: 50px; height: 50px; right: 16px; bottom: 16px; }
+  .whatsapp-fab svg { width: 24px; height: 24px; }
 }

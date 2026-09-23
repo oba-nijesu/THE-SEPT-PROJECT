@@ -158,22 +158,54 @@
     });
   });
 
-  /* ---------- Contact form (front-end only demo) ---------- */
+  /* ---------- Contact form ---------- */
   var form = document.getElementById('contactForm');
   var status = document.getElementById('formStatus');
 
+  function showFormStatus(message, isError) {
+    if (!status) return;
+    status.textContent = message;
+    status.classList.toggle('error', !!isError);
+    status.classList.add('visible');
+    status.setAttribute('tabindex', '-1');
+    status.focus();
+  }
+
   if (form && status) {
+    // No-JS fallback: contact.php redirects back here with ?sent=1/0.
+    var sentParam = new URLSearchParams(window.location.search).get('sent');
+    if (sentParam === '1') {
+      showFormStatus("Thanks — your request has been received. We'll be in touch shortly.", false);
+    } else if (sentParam === '0') {
+      showFormStatus('Sorry, something went wrong sending your request. Please try again or email us directly.', true);
+    }
+
     form.addEventListener('submit', function (e) {
       e.preventDefault();
       if (!form.checkValidity()) {
         form.reportValidity();
         return;
       }
-      status.textContent = "Thanks — your request has been received. We'll be in touch shortly.";
-      status.classList.add('visible');
-      form.reset();
-      status.setAttribute('tabindex', '-1');
-      status.focus();
+
+      var submitBtn = form.querySelector('button[type="submit"]');
+      if (submitBtn) submitBtn.disabled = true;
+
+      fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'X-Requested-With': 'XMLHttpRequest' }
+      })
+        .then(function (res) { return res.json(); })
+        .then(function (data) {
+          showFormStatus(data.message, !data.success);
+          if (data.success) form.reset();
+        })
+        .catch(function () {
+          showFormStatus('Sorry, something went wrong sending your request. Please try again or email us directly.', true);
+        })
+        .finally(function () {
+          if (submitBtn) submitBtn.disabled = false;
+        });
     });
   }
 })();
