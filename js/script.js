@@ -175,7 +175,7 @@
     // No-JS fallback: contact.php redirects back here with ?sent=1/0.
     var sentParam = new URLSearchParams(window.location.search).get('sent');
     if (sentParam === '1') {
-      showFormStatus("Thanks — your request has been received. We'll be in touch shortly.", false);
+      showFormStatus("Thanks, your request has been received. We'll be in touch shortly.", false);
     } else if (sentParam === '0') {
       showFormStatus('Sorry, something went wrong sending your request. Please try again or email us directly.', true);
     }
